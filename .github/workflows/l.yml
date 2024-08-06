@@ -1,0 +1,11 @@
+name: Joan and Janet
+run-name: Testing Github Actions
+on: [push]
+jobs:
+  Test-GithubActions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files in the repository
+        run: 
+          ls ${{github.workspace}}
+      - run: echo "Hello Winnifred and Ritah"
